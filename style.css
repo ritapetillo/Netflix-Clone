@@ -135,8 +135,107 @@ footer.container {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+/*------------TITLE PROFILE------------*/
+.profile {
+  color: rgb(247, 241, 241);
+}
+.title-profile {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 30px;
+}
+
+.title-profile h1 {
+  font-size: 50px;
+}
+
+img.img-fluid.rounded {
+  margin-left: -10%;
+}
+.profile__span-name {
+  background-color: rgb(150, 144, 144);
+  color: white;
+  display: block;
+  font-size: 20px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+button#dropdownMenuButton.btn {
+  padding: 0;
+  border-radius: 0;
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 8px;
+}
+
+.profile__span-maturity {
+  background-color: rgb(150, 144, 144);
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  margin-bottom: 30px;
+  max-width: fit-content;
+  text-align: center;
+}
+.btn.btn-edit {
+  border: 1px solid rgb(170, 167, 167);
+  border-radius: 0;
+  height: fit-content;
+  padding: 3px 10px;
+  width: 20%;
+  text-transform: uppercase;
+  color: rgb(170, 167, 167);
+  font-size: 14px;
+}
+.btn.btn-bottom {
+  border: 1px solid rgb(170, 167, 167);
+  border-radius: 0;
+  height: fit-content;
+  padding: 3px 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  color: rgb(170, 167, 167);
+  font-size: 20px;
+}
+.input-check {
+  flex-direction: row;
+  align-items: center;
+}
+.input-check span {
+  margin-left: 4px;
+  font-size: 13px;
+}
+
+.bottom-buttons {
+  flex-direction: row;
+  justify-content: stretch;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
 @media screen and (max-width: 990px) {
   .hidden-mobile {
     display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  main {
+    zoom: 0.7;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    zoom: 0.6;
+    margin-left: 10px;
+    min-width: 100vw;
+  }
+  .container {
+    min-width: 450px;
+  }
+  .bottom-buttons {
+    flex-direction: row;
+    justify-content: center;
   }
 }
