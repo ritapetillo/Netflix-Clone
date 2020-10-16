@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-netflix navbar-dark">
+            <a class="navbar-brand" href="#"><img src="https://pmcvariety.files.wordpress.com/2020/05/netflix-logo.png"
+                    alt="logo" class="nav__logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My List</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-auto hidden-mobile">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">KIDS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="nav-avatar"
+                            src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png"
+                            alt="">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row main__title">
+            <div class="d-flex main__title-one">
+                <h1>TV Shows</h1>
+                <div class="main__title-input">
+                    Genres<i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="main__title-input main__title-input-right">
+                    <i class="fas fa-align-left m-0"></i>
+                </div>
+                <div class="main__title-input main__title-input-right">
+                    <i class="fas fa-th-large m-0"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row shows__1">
+            <h4>Tranding Now</h4>
+            <div id="showsCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner  w-90" role="listbox">
+                    <div class="carousel-item row no-gutters active">
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfijNxHv0tpslPJ7aai2UtoCUSH8Smmcf8_XA9dPysMdE5c7w4L3oKEuXdqydaPrF_kgp_ukeFK9wsgsfXU8dqFVzJSKYDnGx_saITn0PUqC1oWT4_78-vIVshgpf0FOtXvgWjeVOIg6CpiD-dSYoWjAPOQ.webp?r=b50">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRcFSyPv9Cy135jGvjtME-82fmX37H2JAzOoDR0HjlGYQjd18juwuVCf7m8H0SvZrXQqtGbkCv9uSuXCEcugvNkvl9fzRrrX0pckjagT-cgmNt2bX1njwPZ1IvygXcxEFw.webp?r=ec4">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcrEI28oT_6zPdOThspO4hWVHlD3Ex0WGVLPMc0_XAhgk4d7DTLozfT8DtKrY9HKWSKVuVqtn35tLt85c0POg9_LTeq4q1hXCNR8QaqoITseAP8fNFGxzeWbFQVKxp5Kp3P5HasXBPjfgCHz99PWQ6DD2EBL9D_lXBsNMiX3mMJL4tgHNU18rUw.jpg?r=e91">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUy-ldnfyZPS24NqX2An8_55fNj-qLAev_gY8ye7oBSP6fum7frEWw7JUvcxSL7HfshKg69NCXRidNJvsc5j5RP8m_DJYJU5vFg_GfBK5M6EC6agCRDArBtj6aK5.jpg?r=fbb">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTiP3kdY9tMcg1NJGiQLq9Aw7Jd23QQ_Eflu9_NHSMzLx4qesVUNMdG7J6adqqktnLUwtJed9uX8zdQpHcLMWlTYHsYz1lv4glqB-JMjPFtVptpPF6ko69xUHnMNCcFW4-j3mTtO8ReorwSauFyM0eu5mPVFGets_d7JpOWDxmEEY5CfbvZClI8.jpg?r=efc">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcDx-tyvQr-8EwrA_MXazP7j6yJmFZ1I5aP5--rvPeGpxFL9X0CY-l7ZN6VcgTQf--WZZ-7SxQI6tg0NoQ-V7g9_P8nF2lso6y1V45R16WVIPPmI6SqdYTxifwe_.jpg?r=b4f">
+                        </div>
+                    </div>
+                    <div class="carousel-item row no-gutters">
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcDx-tyvQr-8EwrA_MXazP7j6yJmFZ1I5aP5--rvPeGpxFL9X0CY-l7ZN6VcgTQf--WZZ-7SxQI6tg0NoQ-V7g9_P8nF2lso6y1V45R16WVIPPmI6SqdYTxifwe_.jpg?r=b4f">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcupzf6YMtAS7nZlBhTKpok8_GbQWBm9lGf5AvDs-TsstWM3DsH2aB76zJf1VHUWvESStsvjkcmkjp0ct1zL3VdWpQc.webp?r=ade">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTJa7OGm-kEvvvhV29KAJBtDRm1OaJf9_CHbzRsXyUmA4G0L_8EpueHfiLNh1VgZdHg6UA3js8lFUla9huux_XvZ77M.webp?r=bcc">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWWX7DEU28V7sniPGDWsOMBlNtai9RbO9Nvaos5bf9puYL9PZMD4f4pyzUg3GBPDlagh-pUCQmF6kn9u3imTR6kROu_IPDOG7cCVYtN6uFLRI_Qix5hE5o8EGVkY.jpg?r=85f">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcDx-tyvQr-8EwrA_MXazP7j6yJmFZ1I5aP5--rvPeGpxFL9X0CY-l7ZN6VcgTQf--WZZ-7SxQI6tg0NoQ-V7g9_P8nF2lso6y1V45R16WVIPPmI6SqdYTxifwe_.jpg?r=b4f">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUy-ldnfyZPS24NqX2An8_55fNj-qLAev_gY8ye7oBSP6fum7frEWw7JUvcxSL7HfshKg69NCXRidNJvsc5j5RP8m_DJYJU5vFg_GfBK5M6EC6agCRDArBtj6aK5.jpg?r=fbb">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row shows__1">
+            <h4>Watch It Again</h4>
+            <div id="showsCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner  w-90" role="listbox">
+                    <div class="carousel-item row no-gutters active">
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT5GAnVpgDzqEYgXFLeGGkLotZtwb7EbBEwh_Y1iRJ5XuKTWrJQP2MMhCGbqyYan1JaDw1oUSu1M8pV1moRYXpknWWhBN18mVo0h1ShsYEwvZCUu6NUu4afe3hI1.jpg?r=40e">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcEAB_W7tGzJ2KYpLWCvH5G0tZ4VBcXfrmELk3Og5y7xcNQHHJcE_pDLSFmGGSHqGl-WPeTClLTXpNX5pSn5mTNJJTSi27jy4jLl86-mvXz8WoeAcLdQVdWZKbQ_.jpg?r=2f0">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcIvHq56iayp0u9bJ0PfS10MmYfvx9n8uW9aKA4RKVRQMteoGO8WDTtMfqNFH9DWEqT4trRvRmf3MiWVq-r6hZWvcL4.webp?r=ca5">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY1lhrLw22jgwYvZSi7tHkWELM0AmOMDnt-UK1UVz_aZurSWTT80xjhv2CRGGhNF3UVixZ3FazHQJbE-eku07usQ_Vg.webp?r=589">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZbb6-6vKOnmmBhexVDoKA_hSSUgm6rVVjH7qfYvrgDiydTAl00ppsMIHsszQhtjbeujt_T4ZGrOXXwQwJwirwE5VY4.webp?r=698">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRxxLf_ZMD872EfdSPkSO2Qv-IoKs__1YlFXMSl1NcUBDWsOrq5s1F6wkI4Rwn8cWXLy0adi_fDShjZsAPK_JAbsPy1dlQZqwsEkDtdlXzuPvb2VWNQisLQrGkZCLhKKcrbPFuQFI7f-_pcL75ymHORdYU9yxLOayxcCSLbncUUf_-iovEC4YA0.jpg?r=a88">
+                        </div>
+                    </div>
+                    <div class="carousel-item row no-gutters">
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVkDk7OnfZYkfCSzfzDP17c9e8qcoYaf6fulD-4bwRt8Jec7S_3gu4Gb4XNy87N0-hGx_TJyHQ8fbFTqogdUpmfoAoE.webp?r=cb2">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeMHcLF1XVtRGIB5C1FSA0Puck7D2pzwWKAggYW-gx8cJflltJZ2Amo85tCWihj70DY97n6sNDmoFy1cY6J7Ru4EgQA.webp?r=e8a">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfF9t6nkpvOyfS_9WlJ7NwSirqDwOejYSiahrrSje01ccnYofMhy3tAhNDtFg0yaJsNgSeGVT5F6fnBrUFGdk9j9M2kX2Gg7USQwtNq8fr0UaPNMa4voCdRVuF-_.jpg?r=758">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXq-mcxT35K97jh_a_YI-ByRx5ZtdX5Vxqf8PX48n8FgXlnjJq5GeBzHN1UhmFW6yzcIjP2cIF_wE_L3JGDdQAiun395w5PPudgTpHz4I8upasjvSii0UgTtIZbI.jpg?r=392">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaEH0iQNEv3CG7Q0s8c__fIXVaRRzNlfhGb0pv-qotVbs9EXEerdsrnYZ-EMt7wa-IuXLxCDBfiu1NAeD30cZEbHsoQ.webp?r=250">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeX1xJM1df8ytgCOIkKj8tI1KIvNAQZtA8wIdv7SIXYzOIL2vxnViIRUeohXY4020QvqbaCPEmg5X3BoDY4DluwoDm8.webp?r=594">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+        <div class="row shows__1">
+            <h4>New Releases</h4>
+            <div id="showsCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner  w-90" role="listbox">
+                    <div class="carousel-item row no-gutters active">
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSJOZCJrkWGm7WG3U02mkIgbXQ0nenD_EFvGKEyLrUBG0rhHtjEjZq0ZmJvK5q3XKlWgF3SG3ANu7J4cGmIa0VmkMMHYhV94ssDmvOA-vCJqK0sm647c3Kf9FJQR.jpg?r=849">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZ728k-wG94f6nvGdc4g_1ma4Yx2IGG2D_tm4ThSh40kwMEP1d1CYci-U8SxpYTmTfJpwHQu1f8nDtFmvn6fpXh3gOo.webp?r=569">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSmviiPRfntVyWiLwSZdhZtRjSCk_cyNdf4hsJCFyLy8CVSDuyhG_rN5veIxrq-adKpMw2uTKYUccfPCPNxnqDlhoyY.webp?r=b56">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSgU2IWJZk-vvO_x-z5GntZBvW3yFzZSZ8MAloVah_mDNYuxnns4MmpPCw36fmNPfXXOqbzDv_Xv46Qh644hCqrkAlY04rH5oG2Q5KNxH33ghEYrJAzzYexe5AgbBqB_LhxQHtx8phQSbgQjMflpXZ9Eg-PYNMT-LYcnnAolRCo7UgT3vH4xenQGgJkb.webp?r=d42">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABd3HaV8x8dwUZ-ElapISvRL7VeH0UObjXdesDcA-pX7TY8pSZTIfI3yTnd-NYrh37g_Ui1XbtM7URIKvJgBfLfVFs8g.webp?r=401">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe_WhCX9oRKsku2w3d7k23z_nrLqreLiQufGaG7WGJkO7nePBfCmKIv7u-Ui5uoFnmCYjuCQScFkbVpuMxvP8BVe9Cw8LCLlaEWYGhNbFiRvBKa6oEEZ570A5J9s.jpg?r=0bf">
+                        </div>
+                    </div>
+                    <div class="carousel-item row no-gutters">
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS5MTHJAqRw9h50Rkb7GEzOxWhibXma-dHp0Gligpx9Do7R3CKa7AQmjZ9rh1xUqJDodlOqGkl-ycDIQYahwe1C64iUVaXg0F0ouc6GvWdxdKQiEDKRez9SYhwtD.jpg?r=984">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABawnhdHNE7nWH5Y0nle2e9pdKooBC-MI6nBuXgAAoz4yE9PX6SA_sJFpnLH9a0aJ657ITXUibBWBiNor47i2b-uFFIYq_V7XH-LhH3WDBrP9FNXb8L1fFJO-Lb14.jpg?r=c5f">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaby8in1iyMYc2Q6CkGd0CTscWJhY8xAf6tB4Xpn0pGLZF_Ro6hTUlLfRllJO7KWcJybo6YbOMlNr-syY51VzLHJdlU.webp?r=5ca">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf5wdH2iUiAo7AY9gPkz71fjcuQa9yhbEpuBw2RpMU2HDfRSsUvfhoJk8lv-DKxSn0eSMPUNAU9E3SNRhJ6fEN_vq_c.webp?r=a61">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQKMFhjs7qd1aKsgPsUbweFkIIJDimbebYRyy1lu0Ru9RW594YPNdil8ZKr2RARU0utV8ttCYXpXiunPmglffL89Wv2fCoU0XwDocBKc-WDqHgV7s81ekvgkYp8c2UIL32w2dOBa2yiEBDV1VsWbyejtKv5Qow.jpg?r=ad8">
+                        </div>
+                        <div class="col-2 float-left"><img class="img-fluid"
+                                src="https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe3Ru9HSdsS5MyPKp59f8kOMFimS-uS5wSIUkn4rIK1Fn8qYzjRfU0AQnjchd7Znd39QRTpR_HqBKZi2thi34ywWczZM4sf-cg1zr7ZEpwGFQhXAYQoWiNHDmYfa.jpg?r=7ee">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer class="container w-70">
+        <div class="row socials d-flex ml-1">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="row footer__links">
+            <div class="col col-6 col-md-3 d-flex flex-column">
+                <a href="" class="footer__link">Audio and Subtitles</a>
+                <a href="" class="footer__link">Media Center</a>
+                <a href="" class="footer__link">Privacy</a>
+                <a href="" class="footer__link">Contact Us</a>
+                <a href="" class="footer__link footer__btn">Service Code</a>
+            </div>
+            <div class="col col-6 col-md-3 d-flex flex-column">
+                <a href="" class="footer__link">Audio Description</a>
+                <a href="" class="footer__link">Investor Relations</a>
+                <a href="" class="footer__link">Legal Notices</a>
+                <a href="" class="footer__link">Contact Us</a>
+            </div>
+            <div class="col col-6 col-md-3 d-flex flex-column">
+                <a href="" class="footer__link">Help Center</a>
+                <a href="" class="footer__link">Jobs</a>
+                <a href="" class="footer__link">Cookie Preferences</a>
+
+            </div>
+            <div class="col col-6 col-md-3 d-flex flex-column">
+                <a href="" class="footer__link">Gift Card</a>
+                <a href="" class="footer__link">Terms of Use</a>
+                <a href="" class="footer__link">Corporate Information</a>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/84a612360c.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

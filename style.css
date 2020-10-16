@@ -1,0 +1,140 @@
+/*-------------GENERAL------------*/
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  margin: 0 auto;
+  background-color: #020202;
+}
+main {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+a:link {
+  text-decoration: none;
+}
+
+/*-------------NAVBAR------------*/
+
+.nav-netflix {
+  background-color: #020202;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+}
+
+.nav__logo {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link i {
+  color: rgb(255 255 255);
+}
+img.nav-avatar {
+  width: 30px;
+}
+.navbar {
+  padding: 0.1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+/*-------------MAIN------------*/
+
+/*------------TITLE------------*/
+
+.main__title {
+  padding: 0.5em 1.5em;
+  margin-top: 30px;
+  color: white;
+  width: 100vw;
+  font-weight: 100;
+  font-family: "Noto Sans JP", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.main__title-one {
+  align-items: center;
+}
+
+.main__title h1 {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-right: 30px;
+}
+
+.main__title-input {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border: 1px solid white;
+}
+
+.main__title-input i {
+  margin-left: 20px;
+}
+div.main__title-input.main__title-input-right {
+  padding: 7px 15px;
+}
+
+/*------------IMGS SLIDES------------*/
+
+#showsCarouse {
+  max-height: 50px;
+}
+.shows__1 {
+  margin-left: 1.2em;
+  margin-bottom: 50px;
+}
+.shows__1 h4 {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*------------FOOTER------------*/
+
+footer a {
+  color: rgba(255, 255, 255, 0.349);
+  font-size: 0.5em;
+  padding: 0.5em 0.1em;
+}
+footer a:hover {
+  color: white;
+}
+footer i {
+  margin-right: 15px;
+  color: rgba(255, 255, 255, 0.473);
+  margin-bottom: 15px;
+}
+footer.container{
+    width: 60vw;
+}
+
+.footer__btn{
+    padding:5px 5px;
+    border:1px solid rgba(255, 255, 255, 0.473);
+    max-width: 65px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+@media screen and (max-width: 990px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
