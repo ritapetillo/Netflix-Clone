@@ -21,7 +21,10 @@ a:link {
 .nav-netflix {
   background-color: #020202;
 }
-
+div.dropdown-menu.show {
+  right: 0 !important;
+  left: -150% !important;
+}
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(255 255 255);
 }
@@ -121,17 +124,16 @@ footer i {
   color: rgba(255, 255, 255, 0.473);
   margin-bottom: 15px;
 }
-footer.container{
-    width: 60vw;
+footer.container {
+  width: 60vw;
 }
 
-.footer__btn{
-    padding:5px 5px;
-    border:1px solid rgba(255, 255, 255, 0.473);
-    max-width: 65px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+.footer__btn {
+  padding: 5px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  max-width: 65px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 990px) {
   .hidden-mobile {
